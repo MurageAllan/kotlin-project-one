@@ -1,0 +1,69 @@
+A kotlin class is similar to a java class
+A class in this case is a blueprint for objects with similar properties
+A kotlin class has class header that speciefies its type, parameter, constructors
+
+syntax for creating a class
+class Person{
+    // properties
+    // methods
+}
+
+The above class has a default empty primary constructor
+To specify a primary constructor with properties
+ class Person constructor(args){
+
+ }
+
+In kotlin class properties must be initialized or declared as abstract
+An object is a real time or logical entity with state and behaviour
+
+syntax for creating an object from the Person class
+val person = Person()
+
+
+Nested class
+Nested class is a class created inside another class
+In kotlin nested class are by default static so its data members and functions can be accessed without creating an object of the class.
+nested class cannot access the data member of the outer class
+
+
+Nested inner class
+Able to access the data members of the outer class that's it advantage over plain nested class
+
+Constructors
+There are two types of constructors in kotlin
+The two types of constructors are primary and secondary constructors
+There can be only one primary constructors but several secondary constructors
+
+In kotlin classes are final by default
+To inherit a class you must add the name open keyword before the class keyword
+
+
+Abstract class
+An abstract class cannot be instantiated
+The methods of an abstract class are non abstract until specified as abstract
+abstract class or function are open by default
+Abstract functions and classes don't have implementations unless when overriden
+
+
+Interface
+It is a blue print of a class
+Contains both abstract method implementation and implementation methods as well
+Methods declared without their body are abstract by default
+Supports multiple inheritance
+
+
+Data class
+Used to hold data/state and contains default functionalities
+Must contain at least one primary constructor with at least one parameter
+It contains an equal(), hashcode(), toString(), component functions that is getters and setters, copy()
+Data class cannot be abstract, open or sealed
+May extend other classes
+
+Sealed class
+It restricts the class hierarchy.
+The constructors of a sealed class are private by default and cannot be allowed as non-private
+Sealed class is used when the object have one of the types from limited set, but cannot have any other type.
+Sealed class ensures type safety
+A sealed class is implicitly abstract and cannot be instatiated
+

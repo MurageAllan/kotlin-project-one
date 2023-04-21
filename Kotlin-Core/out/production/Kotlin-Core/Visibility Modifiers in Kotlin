@@ -1,0 +1,17 @@
+PUBLIC
+public is the default modifier in kotlin.
+public modifier is accessible from anywhere in the project
+If no modifier is specified for the class, inteface, method, properties... the default one is public
+
+PROTECTED
+Protected modifier with a class or interface allow visbility to its class or subclass only
+A protected declaration when overriden in its sublass becomes protected too unless it is explicitly changed
+A protected monifire cannot be declared at the top
+
+INTERNAL
+The internal modifier makes the field visible inside the module only in which it is implemented
+
+PRIVATE
+A private modifier allows the declaration to only be accessible within the block in which properties, fields... are declared
+A private package can ve accessible only within that specific file
+The private modifier declaration does not allow access outside the scope.

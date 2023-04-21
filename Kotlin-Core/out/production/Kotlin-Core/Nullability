@@ -1,0 +1,10 @@
+Kotlin solves the problem of nullables by checking for null types at compile time rather than run time
+
+If you use regular types like "String" you can only store non-nullable values
+
+To store nullable values you have to add "?" at the end of the data type example "String?" hence now you can either store a null or non null value
+
+If you try accessing non-nullable type's access its members or call on it its extension functions there is no problem.
+
+
+

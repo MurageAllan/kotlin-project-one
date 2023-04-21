@@ -1,0 +1,6 @@
+lambda functions have no name
+syntax
+{variable -> body_function}
+
+High order function
+This is atype of function that accepts another function as a parameter or returns a function or does both
